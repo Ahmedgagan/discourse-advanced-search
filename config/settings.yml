@@ -1,0 +1,10 @@
+plugins:
+  tag_group_action_enabled:
+    default: true
+    client: true
+  enable_option_topic_created_by:
+    default: true
+    client: true
+  enable_option_exclude_tag_group:
+    default: true
+    client: true

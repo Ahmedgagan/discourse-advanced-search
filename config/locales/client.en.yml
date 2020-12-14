@@ -1,0 +1,10 @@
+en:
+  js:
+    search:
+      advanced:
+        topic_created_by:
+          label: "Topic Created By"
+          user_selector_placeholder: "Search..."
+        exclude_tag_group:
+          label: "Exclude Tag Group"
+          tag_group_selector_placeholder: "Search..."

@@ -1,0 +1,32 @@
+<div class="control-group pull-left">
+  {{#if enable_option_exclude_tag_group}}
+    <label class="control-label" for="search-exclude-tag-group">{{i18n "search.advanced.exclude_tag_group.label"}}</label>
+    <div class="controls">
+      {{tag-group-chooser
+        id="exclude-tag-group"
+        tagGroups=searchedTerms.excludeTagGroup
+        onChangeSearchedTermField=onChangeSearchedTermField
+        enable_option_exclude_tag_group=enable_option_exclude_tag_group
+        options=(hash
+          maximum=1
+          filterPlaceholder="search.advanced.tag_group.tag_group_selector_placeholder"
+        )
+      }}
+    </div>
+  {{/if}}
+
+  {{#if enable_option_topic_created_by}}
+    <br/>
+    <label class="control-label" for="search-assigned-to">{{i18n "search.advanced.topic_created_by.label"}}</label>
+    <div class="controls">
+      {{user-chooser
+        value=searchedTerms.topic_created_by
+        onChange=(action "onChange")
+        options=(hash
+          maximum=1
+          excludeCurrentUser=false
+        )
+      }}
+    </div>
+  {{/if}}
+</div>

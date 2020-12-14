@@ -1,0 +1,6 @@
+en:
+  site_settings:
+    more_advanced_search_options_enabled: "Enable Advanced Search Options plugin"
+    enable_option_topic_created_by: "Enable topic created by Advanced Search Option"
+    enable_option_exclude_tag_group: "Enable not in tag group Advanced Search Option"
+    
